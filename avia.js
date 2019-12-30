@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
     createNewLot(dat.mow);
 
     //Событие нажатие на логотип
-    //Вся форма возвращается к исзодному виду
+    //Вся форма возвращается к исходному виду
     logoBut.addEventListener("click", () => {
             tabBut.forEach((item) => {
                 item.classList.remove('sort-top');
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.left-input').forEach((item) => {
                 item.checked = false
             })
-        
+        objForSort = dat.mow.slice()
         createNewLot(dat.mow)
     });
 
